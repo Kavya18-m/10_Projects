@@ -1,0 +1,84 @@
+/* === Reset & Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top left, #1e1e2f, #0d0d1a);
+  color: #e0e0ff;
+  line-height: 1.6;
+}
+
+/* === Header and Footer === */
+header, footer {
+  background: linear-gradient(to right, #2c003e, #000a40);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 0 10px #9a4dff;
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 0 0 8px #c084fc;
+}
+
+/* === Gallery Section === */
+.gallery {
+  padding: 2em;
+  text-align: center;
+  background: transparent;
+}
+
+.gallery figure {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  background: rgba(25, 0, 51, 0.6);
+  border: 2px solid #4b0082;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(155, 0, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 0.5em;
+  color: #ffccff;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-style: italic;
+  border-top: 1px solid #333;
+}
+
+/* === Footer === */
+footer p {
+  font-size: 0.9em;
+  color: #aaaaff;
+}
+
+/* === Media Queries for Responsiveness === */
+@media (max-width: 768px) {
+  .gallery figure {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery figure {
+    width: 90%;
+  }
+}

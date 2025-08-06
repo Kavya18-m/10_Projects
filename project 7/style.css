@@ -1,0 +1,75 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f7f9fc, #e3e8f0);
+  color: #2d2d2d;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #30475e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #5c5c5c;
+}
+
+/* Sections */
+.about-section {
+  background: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: scale(1.01);
+}
+
+.about-section h2 {
+  color: #4e6e81;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  border-left: 4px solid #8bbabb;
+  padding-left: 12px;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #6e6e6e;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}

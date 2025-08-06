@@ -1,0 +1,72 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Theme Body */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9fafc;  /* light gray-blue */
+  color: #333; /* dark gray text */
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Sticky Navigation Bar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc; /* soft blue */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #005fa3; /* darker blue on hover */
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+section:nth-child(even) {
+  background-color: #f0f4f8; /* alternate light background */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50; /* deep navy-gray */
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555; /* medium-dark gray for readability */
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  color: #888;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}

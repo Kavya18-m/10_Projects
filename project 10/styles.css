@@ -1,0 +1,78 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  padding: 30px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+/* Container for all cards */
+.services-container {
+  display: block; /* default block layout for all sizes */
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card styles */
+.service-card {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  vertical-align: top;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #007acc;
+}
+
+.service-card p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 600px) {
+  .service-card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 900px) {
+  .services-container {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .service-card {
+    width: 45%;
+    margin: 2.5%;
+  }
+}
