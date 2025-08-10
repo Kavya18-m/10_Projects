@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --accent-color: #4CAF50;
+  --task-bg: #fff;
+  --task-border: #ccc;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --accent-color: #6cc644;
+  --task-bg: #2c2c2c;
+  --task-border: #444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--task-border);
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 14px;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: var(--task-bg);
+  border: 1px solid var(--task-border);
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+#themeToggle {
+  margin-top: 20px;
+  width: 100%;
+}
